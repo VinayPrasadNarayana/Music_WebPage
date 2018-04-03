@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head><script src = "quiz.js"> </script>
+<title>DeadTunes - Quiz Page</title>
+<style>
+
+body{
+font-family:arial;
+font-size:15px;
+line-height:1.6em;
+
+}
+
+li b{
+	list-style=none;
+}
+
+.container{
+	width:70%;
+	margin:20px auto;
+	overflow:auto;
+	
+}
+
+
+.pull-left{float:left:}
+.pull-right{float:left:}
+background:#f4f4f4;
+
+ul {
+
+	list-style: none;
+	float: right;
+	top: 0;
+	width: 93%;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background: #2F4F4F;
+	
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+li a:hover:not(.active) {
+	background-color: #A9A9A9;
+}
+
+.active {
+	background-color: #008B8B;
+}
+
+img {
+	width: 85px;
+	 height: 100px;
+	 float: left;
+}
+
+div.container{
+	width: 100%;
+	border: 1px #000000;
+}
+
+header {
+	margin-top: 0px;
+	
+}	
+
+article {
+	margin-top: 95px;
+	padding: 1em;
+	font-family: Arial, sans-serif;
+}
+
+footer {
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+div.transbox {
+	margin: 5px;
+	background-color: #ffffff;
+	border: 1px #000000;
+	opacity: 0.9;
+}
+
+div.transbox a {
+	margin: 1%;
+	font-weight: bold;
+	color: #000000;
+}
+
+</style>
+</head>
+<body background="background1.jpg">
+
+<a href="main_page.html">
+<img src="final logo2.png">
+</a>
+
+<ul style="background-color: #2F4F4F;">
+	<li><a  href="main_page.html">Home</a></li>     
+	<li><a class="active" href="Quiz.html">Take a Quiz</a></li>
+	<li><a  href="BuyProducts.html">Buy Products</a></li>
+	<li style="float:right"><a  href="feedback_page.html">Feedback</a></li>
+</ul>
+
+<br>
+<br>
+
+<div  class= "transbox" >
+
+<article>
+
+<table border= "1" align="center"width=40%>
+<tr class="mainText textFieldBackground">
+<th>
+
+
+
+<form id="quiz" name ="quiz" style="background-color:#f4f4f4;">
+	<ol>
+		 <h3>1. What was Queen's fist worldwide breakthrough?</h3>        
+
+           <ul class="answers">            
+             <input type="radio" name="q1" value="incorrect" id="q1a"><label for="q1a">Bohemian Rhapsody</label><br/>          
+             <input type="radio" name="q1" value="correct"   id="q1b"><label for="q1b">Killer Queen</label><br/>            
+             <input type="radio" name="q1" value="incorrect" id="q1c"><label for="q1c">Liar</label><br/>            
+             <input type="radio" name="q1" value="incorrect" id="q1d"><label for="q1d">Keep Yourself Alive</label><br/>       
+           </ul>    
+
+
+		 <h3>2. When did Freddie Mercury die?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q2" value="correct"   id="q2a"><label for="q2a">Nov 24,1991</label><br/>          
+              <input type="radio" name="q2" value="incorrect" id="q2b"><label for="q2b">Dec 22,1992</label><br/>            
+              <input type="radio" name="q2" value="incorrect" id="q2c"><label for="q2c">Nov 21,1992</label><br/>            
+              <input type="radio" name="q2" value="incorrect" id="q2d"><label for="q2d">Dec 22, 1991</label><br/>       
+           </ul>   	
+
+		<h3>3. Who was the original singer for the band AC DC?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q3" value="incorrect" id="q3a"><label for="q3a">Axl Rose</label><br/>          
+              <input type="radio" name="q3" value="incorrect" id="q3b"><label for="q3b">Bon Scott</label><br/>            
+              <input type="radio" name="q3" value="incorrect" id="q3c"><label for="q3c">Malcolm Young</label><br/>            
+              <input type="radio" name="q3" value="correct"   id="q3d"><label for="q3d">Brian Johnson</label><br/>       
+           </ul> 
+
+		<h3>4. In what year was AC DC formed?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q4" value="correct"   id="q4a"><label for="q4a">1973</label><br/>          
+              <input type="radio" name="q4" value="incorrect" id="q4b"><label for="q4b">1975</label><br/>            
+              <input type="radio" name="q2" value="incorrect" id="q4c"><label for="q4c">1972</label><br/>            
+              <input type="radio" name="q2" value="incorrect" id="q4d"><label for="q4d">1970</label><br/>       
+           </ul>  
+
+		<h3>5. Where was Pearl Jam formed?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q5" value="incorrect" id="q5a"><label for="q5a">Austin, Texas</label><br/>          
+              <input type="radio" name="q5" value="incorrect" id="q5b"><label for="q5b">San Jose, California</label><br/>            
+              <input type="radio" name="q5" value="correct"   id="q5c"><label for="q5c">Seattle, Washington</label><br/>            
+              <input type="radio" name="q5" value="incorrect" id="q5d"><label for="q5d">Chicago, Illinois</label><br/>       
+           </ul>   
+		
+		 <h3>6. When was the album Appetite for Destruction released?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q6" value="incorrect" id="q6a"><label for="q6a">1988</label><br/>          
+              <input type="radio" name="q6" value="incorrect" id="q6b"><label for="q6b">1985</label><br/>            
+              <input type="radio" name="q6" value="correct"   id="q6c"><label for="q6c">1987</label><br/>            
+              <input type="radio" name="q6" value="incorrect" id="q6d"><label for="q6d">1989</label><br/>       
+           </ul>   
+
+			
+		 <h3>7. What album was "Sweet Child o' Mine" featured in?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q7" value="incorrect" id="q7a"><label for="q7a">Use Your Illusion</label><br/>          
+              <input type="radio" name="q7" value="correct"   id="q7b"><label for="q7b">Appetite for Destruction</label><br/>            
+              <input type="radio" name="q7" value="incorrect" id="q7c"><label for="q7c">Chinese Democracy</label><br/>            
+              <input type="radio" name="q7" value="incorrect" id="q7d"><label for="q7d">G N'R Lies</label><br/>       
+           </ul>  
+			
+			
+		<h3>8. Where was Iron Maiden formed?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q8" value="correct"   id="q8a"><label for="q8a">Leyton,East London</label><br/>          
+              <input type="radio" name="q8" value="incorrect" id="q8b"><label for="q8b">Aberdeen, Scotland</label><br/>            
+              <input type="radio" name="q8" value="incorrect" id="q8c"><label for="q8c">Bangor, Wales</label><br/>            
+              <input type="radio" name="q8" value="incorrect" id="q8d"><label for="q8d">Bristol, South West England</label><br/>       
+           </ul>    
+			
+						
+			< <h3>9. Who is the lead vocals for System Of a Down?</h3>        
+           <ul class="answers" >            
+              <input type="radio" name="q9" value="incorrect" id="q9a"><label for="q9a">Shavo Odadjian</label><br/>          
+              <input type="radio" name="q9" value="incorrect" id="q9b"><label for="q9b">John Dolmayan</label><br/>            
+              <input type="radio" name="q9" value="incorrect" id="q9c"><label for="q9c">Daron Malakian</label><br/>            
+              <input type="radio" name="q9" value="correct"   id="q9d"><label for="q9d">Serj Tankian</label><br/>       
+           </ul>  
+		
+	<h3>10. When was the album Master of Puppets by Metallica released?</h3>        
+           <ul class="answers">            
+              <input type="radio" name="q10" value="incorrect" id="q10a"><label for="q10a">March 4, 1988</label><br/>          
+              <input type="radio" name="q10" value="incorrect" id="q10d"><label for="q10d">April 3, 1985</label><br/>            
+              <input type="radio" name="q10" value="correct"   id="q10c"><label for="q10c">March 3, 1986</label><br/>            
+              <input type="radio" name="q10" value="incorrect" id="q10d"><label for="q10d">July 2, 1986</label><br/>       
+           </ul>  
+</ol>
+
+
+<input type="reset" value="Clear">
+<input type="button" value="submit" onClick = "checkAll()">
+<textarea rows = "10" cols = "60"name = "answerbox"  >the correct answer will be displayed here</textarea>
+
+</th>
+</tr>
+</form>
+
+</article>
+<footer>
+<p>Page editor:W1604760</a></p> 
+
+</footer>
+<script>
+score = 0;
+incorrect = 0;
+var text2display = "";
+
+var answer = new Array (11)
+
+answer[0]="for Question 1 the Correct Answer is  Killer Queen\n";
+answer[1]="for Question 2 the Correct Answer is  Nov 24, 1991\n";
+answer[2]="for Question 3 the Correct Answer is  Brian Johnson\n";
+answer[3]="for Question 4 the Correct Answer is  1973\n";
+answer[4]="for Question 5 the Correct Answer is  Seattle, Washington\n";
+answer[5]="for Question 6 the Correct Answer is  1987\n";
+answer[6]="for Question 7 the Correct Answer is  Appetite for Destruction\n";
+answer[7]="for Question 8 the Correct Answer is  Leyton,East London\n";
+answer[8]="for Question 9 the Correct Answer is  Serj Tankian\n";
+answer[9]="for Question 10 the Correct Answer is March 3, 1986\n";
+
+
+var question = new Array(11)
+question [0] ="q1";
+question [1] ="q2";
+question [2] ="q3";
+question [3] = "q4";
+question [4] = "q5";
+question [5] = "q6";
+question [6] = "q7";
+question [7] = "q8";
+question [8] = "q9";
+question [9] = "q10";
+
+
+
+
+function checkQs(s){
+	var qs = document.getElementsByName(s);
+	var noOFradios = qs.length;
+
+	for(var i = 0; i < noOFradios; i++ ){
+	if (qs [i].checked)
+	{
+		if(qs[i].value=="correct")	
+		{
+		text2display= text2display + "Correct! \n";
+		
+		score++;
+		}
+	else
+		{
+		text2display = text2display + "incorrect, " + answer[question.indexOf(s)];
+	
+	
+	incorrect++;
+	}
+	break;
+	
+	}
+	}
+}
+
+
+
+	function checkAll() {
+		for (var i =0; i < question.length; i++){
+			
+			checkQs(question[i]);
+		}
+				quiz.answerbox.value = text2display + "\n\n your score is " + score + "\n\n incorrect answer " + incorrect;
+		
+	
+}
+	
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

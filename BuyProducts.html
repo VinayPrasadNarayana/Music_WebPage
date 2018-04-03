@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DeadTunes Buy Products </title>
+<style>
+body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #666;
+}
+
+h1{
+     font-family: Papyrus, fantasy;	
+     text-align: center;	
+     font-size: 40px;	
+     margin: 40px 20px 80px 20px;
+}
+
+ul {
+
+	 list-style: none;
+	 float: right;
+	 top: 0;
+	 width: 93%;
+	 margin: auto;
+	 padding: 0;
+	 overflow: hidden;
+	 background-color: #2F4F4F;
+	
+}
+
+li {
+	 float: left;
+}
+
+li a {
+	 display: block;
+	 color: white;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none;
+	 font-family: Arial, sans-serif;
+}
+
+li a:hover:not(.active) {
+	 background-color: #A9A9A9;
+}
+
+.active {
+	 background-color: #008B8B;
+}
+
+.logo {
+   
+	 width: 85px;
+	 height: 100px;
+	 float: left;
+}
+
+div.container{
+	 width: 100%;
+	 border: 1px #000000;
+}
+
+header {
+	 margin-top: 0px;
+	
+}	
+
+article {
+	 margin-top: 15px;
+	 padding: 1em;
+	
+}
+
+#terms {
+     color: black;
+     bottom:10px;
+     width: 100%;
+     left:0px;
+     height:25px;
+}
+
+div.transbox {
+	 margin: 5px;
+   	 background-color: #ffffff;
+ 	 border: 1px #000000;
+	 opacity: 0.9;
+}
+
+div.transbox a {
+	 margin: 1%;
+	 font-weight: bold;
+	 color: #000000;
+}
+
+.product{
+     float: left;
+	 background-color: white;
+	 margin: 10px 10px 0 0;
+	 width:234px;
+	  text-align:center;
+}
+
+
+.description{
+     text-align: center;	
+	 font-size: 15px;    
+	 font-weight: bold;	color: #333;	
+	 padding-top: 20px;	height: 120px;	
+	 position: relative;
+
+}
+
+.price{
+     color:red;
+	 position: absolute;	
+	 bottom: 30px;	
+	 width: 234px;
+
+}
+
+
+input[id=AddMe]{
+     float:right;
+	 position: absolute;
+     
+ }    
+
+.contain{
+     width:1000px;
+	 margin-left:auto;
+	 margin-right:auto;
+}
+
+.labelOrder {	
+	margin: -75px 10px 0 0;	
+	padding-top: 12px;	
+	width: 258px;	
+	height: 460px;	
+	background-color: #ccc;	
+	float: left; 	
+	text-align: center;	
+	font-size: 15px;    
+	font-weight: bold;	
+	color: #333;
+}
+
+#order {	
+     height: 295px;	
+	 float: none;	
+	 margin-right: auto;	
+	 margin-left: auto;
+}
+	
+#OrderPrice{
+     text-align: Center;
+	 background-color: white;
+	 float: middle;	
+	 width:234px;
+	 margin : 0 auto;
+}
+
+#orderDescription {	
+     color: red;
+	 font-size: 14px;	
+	 height: 40px;
+}
+
+#fontcolor{
+     color:white;
+}
+
+#despro{
+     text-align: left;
+}
+
+form{
+     background-color: #ccc;
+	 width:950px;
+	 clear: both;	
+	 padding: 20px;	
+	 position: relative;	
+	 top: 20px;	
+    
+}
+
+input[id=Placeyourorder], input[id=Clearyourorder]  {	
+	 float: right;	
+	 margin-right: 10px;
+}
+
+#shortcuts{
+     width: 234px;
+	 float: none;	
+    background-color: #ffffff;
+     margin-left:auto;
+	 opacity: 0.9;
+	 text-align: center;
+}
+
+</style>
+</head>
+<body background="background1.jpg">
+
+<a href="BuyProduct.html">
+<img class="image logo" src="final logo2.png">
+</a>
+
+<ul>
+	<li><a  href="main_page.html">Home</a></li>     
+	<li><a  href="Quiz.html">Take a Quiz</a></li>
+	<li><a class="active" href="BuyProducts.html">Buy Products</a></li>
+	<li style="float:right"><a  href="feedback_page.html">Feedback</a></li>
+</ul>
+
+<br>
+<br>
+
+<div id="foo" align="right">
+        <table width="96" border="0">
+            <tr>
+                <td colspan="2" align="center" id="fontcolor">FONT SIZE</td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+                </td>
+                <td align="right">
+                    <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+                </td>
+            </tr>
+     </table>
+</div>
+<div id="shortcuts">
+
+<a href="#productsitem"> Products Option</a>
+<br>
+<a href="#Personalinfo">Personal Information</a>
+</div>
+<div class= "transbox" id="article">
+
+
+<article >
+    
+<div class="contain">
+<h1><center>Music Products</center></h1>
+<div class="product" id="product1">
+<div class="productorder" id="product1order">
+     <img src="select.jpg" alt="Blue Guitar" id="blueguitar">
+	 <div class="description">
+         <span id="product1des">Please select the items</span>
+		 <div class="price">
+             
+			 
+			 GBP <span id="product1price"></span>
+			 
+		     
+		 </div>
+		 </div>
+	 </div>
+	 <div class="AddMe" > <input type="button" value="ADD" id="AddMe1"></div>	
+</div>
+<div class="product" id="product2">
+<div class="productorder" id="product2order">
+     <img src="select.jpg" alt="Black Guitar" id="blackguitar">
+	 <div class="description">
+         <span id="product2des">Please select the items</span>
+		 <div class="price">
+            
+			
+			GBP <span id="product2price"></span>
+			
+		 </div>
+		 </div>
+	 </div>
+	 <div class="AddMe" > <input type="button" value="ADD" id="AddMe2">
+		     </div>	
+</div>
+<div class="product" id="product3">
+     <div class="productorder" id="product3order">
+          <img src="select.jpg" alt="Cream Guitar" id="creamguitar">
+	      <div class="description">
+          <span id="product3des">Please select the items</span>
+		     <div class="price">
+             
+			 GBP <span id="product3price"></span>
+			 
+			     
+		     	
+			 </div>
+	 </div>
+</div>
+<div class="AddMe" ><input type="button" value="ADD" id="AddMe3"></div>
+</div>
+<div class="labelOrder">Your Order:
+     <div id="orderDescription">*Note: Click on Add button to add items to the list*</div>
+	 
+     <div class="product" id="order">
+	     
+	 </div>
+	 <br>
+	 <span id="totalprice">Your Total in GBP</span>
+	 <div class="OrderPrice" id="OrderPrice"></div>
+</div>
+
+<form >
+<hr>
+<span style="color:red;"><i><p id="productsitem">PRODUCT OPTIONS</p></i></span>
+<hr><br>
+<label for="productoption">Music Products </label>
+<select name="productoption" id="productoption">
+<option value="PleaseSelect">Please Select</option>
+<option value="GuitarProducts">Guitars</option>
+<option value="DrumProducts">Drums</option>
+<option value="ProAudioProducts">Pro Audios</option>
+<option value="Accessories">Accessories</option>
+</select>
+ . Item Number 
+<input type="radio" name="colour" id="blue" value="blue" ><label for="blue">1</label>
+<input type="radio" name="colour" id="black" value="black" ><label for="black">2</label>
+<input type="radio" name="colour" id="cream" value="cream" ><label for="cream">3</label>
+<br><br>
+<hr>
+<span id="Personalinfo" style="color:red;"><i>PERSONAL INFORMATION:</i></span>
+<hr>
+
+Enter Your Name:<input type="text" id="name">  
+<br>
+<br>
+Product Name   :<input type="text" id="despro">
+<br><br>
+Mobile Number  :<input type="text" id="MOB">
+<br><br>
+<span style="color:red;"><i>NOTE*: Product name will be automatically updated as you add item to the list</i></span>
+<input type="button" id="Placeyourorder" value="Place your order" onclick="show_alert()">
+<input type="reset" id="Clearyourorder" value="Clear your order">
+
+</form>
+
+</div>
+</article>
+
+<div class="wrapper">
+    <div id="terms">
+        <center>©2017 Dead Tunes By<a href="Vinay_CV.html">W1620428</center></a>
+    </div>
+</div>
+</div>
+
+<script>
+ function getRadioValue( radioArray ) {
+   var i;
+   for ( i = 0; i < radioArray.length; i++ ) {
+      if ( radioArray[ i ].checked ) { 
+         return radioArray[ i ].value;
+      }
+   }
+   return "";
+ }
+
+ function getSelectedValue( selectList ) {
+  return selectList[ selectList.selectedIndex ].value;
+ }
+
+ function getSelectedText( selectList ) {
+   return selectList.options[ selectList.selectedIndex ].text;
+ }
+ 
+ function resetOrder() {
+     document.getElementById( "order" ).innerHTML ="";
+	 document.getElementById( "OrderPrice" ).innerHTML ="";
+     document.getElementById("blueguitar").src = "select.jpg";
+     document.getElementById("blackguitar").src = "select.jpg";
+     document.getElementById("creamguitar").src = "select.jpg";
+	 document.getElementById("product1price").innerHTML = "";
+     document.getElementById("product2price").innerHTML = "";
+     document.getElementById("product3price").innerHTML = "";
+	 document.getElementById( "product1des" ).innerHTML = "Please select the items";
+	 document.getElementById( "product2des" ).innerHTML = "Please select the items";
+	 document.getElementById( "product3des" ).innerHTML = "Please select the items";
+}
+
+
+function show_alert(){
+  var name = document.getElementById('name').value;
+  if (name == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+  var pri = document.getElementById("OrderPrice").value;
+  var des = document.getElementById("despro").value;
+  if (des == "") {
+        alert("Please Select an item");
+        return false;
+    }
+  var Number = document.getElementById('MOB').value;
+  if (Number == "") {
+        alert("Mobile Number must be filled out");
+        return false;
+    }
+  alert("DEAR " + name + "\nYour order of " + des + " of price " + pri + " GBP has been placed.\nYour Mobile Number : "+ Number +"\nThank you for Purchase");
+  
+}
+
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+ 
+
+ function displayProduct ( products ) {
+ 
+     switch( products ){
+	     case "blue":
+		     document.getElementById( "order" ).innerHTML = document.getElementById( "product1order" ).innerHTML ;
+			 document.getElementById( "OrderPrice" ).innerHTML = document.getElementById("product1price").innerHTML;
+		 break;
+	     
+		 case "black":
+		     document.getElementById( "order" ).innerHTML = document.getElementById( "product2order" ).innerHTML;
+			 document.getElementById( "OrderPrice" ).innerHTML = document.getElementById("product2price").innerHTML;
+		 break;
+	     
+		 case "cream":
+		     document.getElementById( "order" ).innerHTML = document.getElementById( "product3order" ).innerHTML;
+			 document.getElementById( "OrderPrice" ).innerHTML = document.getElementById("product3price").innerHTML;
+		 break;
+	 
+	     default:
+	     document.getElementById( "order" ).innerHTML ="";
+		 break;
+    }
+ }
+ 
+  function desProduct ( product) {
+     switch( product ){
+	     case "blue":
+		    document.getElementById( "OrderPrice" ).value = document.getElementById( "product1price" ).innerHTML ;
+		    document.getElementById('despro').value = document.getElementById( "product1des" ).innerHTML ;
+		 break;
+	     
+		 case "black":
+		     document.getElementById( "OrderPrice" ).value = document.getElementById( "product2price" ).innerHTML ;
+		     document.getElementById('despro').value = document.getElementById( "product2des" ).innerHTML ;
+		 break;
+	     
+		 case "cream":
+		     document.getElementById( "OrderPrice" ).value = document.getElementById( "product3price" ).innerHTML ;
+		     document.getElementById('despro').value = document.getElementById( "product3des" ).innerHTML ; 
+		 break;
+	 
+	     default:
+	     document.getElementById( "despro" ).value ="";
+		 break;
+    }
+ }
+ 
+ function CheckOptions(formRef) {
+    var prices = [171.00,99.99,326.69,310,429.86,120.35,100.58,214.93,239.87,49.2,5,15];
+	
+	
+    var orderOption =  getSelectedValue(formRef.productoption);
+	var chosenProduct = getRadioValue( formRef.colour);
+	if ( orderOption.indexOf("Drum") != -1){
+	     document.getElementById("blueguitar").src = "drums1.jpg";
+		 document.getElementById("blackguitar").src = "drums2.jpg";
+		 document.getElementById("creamguitar").src = "drums4.jpg";
+		 document.getElementById("product1price").innerHTML = prices[3];
+		 document.getElementById("product2price").innerHTML = prices[4];
+		 document.getElementById("product3price").innerHTML = prices[5];
+		 document.getElementById( "product1des" ).innerHTML = "Sound Percussion Labs Unity 5-Piece Drum Set";
+		 document.getElementById( "product2des" ).innerHTML = "Sound Percussion Labs Unity Birch Series 5-Piece Drum Set";
+		 document.getElementById( "product3des" ).innerHTML = "Sound Percussion Labs Lil Kicker - 3-Piece Jr. Drum Set";
+    }
+	else if ( orderOption.indexOf("Audio") != -1){
+	     document.getElementById("blueguitar").src = "Microphone.jpg";
+		 document.getElementById("blackguitar").src = "Mixer.png";
+		 document.getElementById("creamguitar").src = "Speakers.jpg";
+		 document.getElementById("product1price").innerHTML = prices[6];
+		 document.getElementById("product2price").innerHTML = prices[7];
+		 document.getElementById("product3price").innerHTML = prices[8];
+		 document.getElementById( "product1des" ).innerHTML = "CAD GXL2600USB Large Diaphragm Microphone";
+		 document.getElementById( "product2des" ).innerHTML = "American Audio VMS MIDI DJ Controller";
+		 document.getElementById( "product3des" ).innerHTML = "Hughes and Kettner TubeMeister 110 1x10 Guitar Speaker Cabinet";
+		 }
+	else if ( orderOption.indexOf("Accessories") != -1){
+	     document.getElementById("blueguitar").src = "Metronome.jpg";
+		 document.getElementById("blackguitar").src = "picks.jpg";
+		 document.getElementById("creamguitar").src = "DrumSticks.jpg";
+		 document.getElementById("product1price").innerHTML = prices[9];
+		 document.getElementById("product2price").innerHTML = prices[10];
+		 document.getElementById("product3price").innerHTML = prices[11];
+		 document.getElementById( "product1des" ).innerHTML = "Wittner 5403 Metronome";
+		 document.getElementById( "product2des" ).innerHTML = "Clayton Exotic Paddock Guitar Picks - 3-Pack";
+		 document.getElementById( "product3des" ).innerHTML = "PROMARK Neil Peart Autograph Series Drumsticks";
+	}
+	 else if( orderOption.indexOf("Guitar") != -1){
+	     document.getElementById("blueguitar").src = "guitar1.jpg";
+		 document.getElementById("blackguitar").src = "guitar2.jpg";
+		 document.getElementById("creamguitar").src = "guitar4.jpg";
+		 document.getElementById("product1price").innerHTML = prices[0];
+		 document.getElementById("product2price").innerHTML = prices[1];
+		 document.getElementById("product3price").innerHTML = prices[2];
+		 document.getElementById( "product1des" ).innerHTML = "Mitchell MD200 Double Cutaway Electric Guitar";
+		 document.getElementById( "product2des" ).innerHTML = "Dreadnought Acoustic Guitar";
+		 document.getElementById( "product3des" ).innerHTML = "Mitchell MX400 Exotic Wood Acoustic-Electric guitar";
+	
+	}
+	else{
+	     document.getElementById("blueguitar").src = "select.jpg";
+         document.getElementById("blackguitar").src = "select.jpg";
+         document.getElementById("creamguitar").src = "select.jpg";
+	     document.getElementById("product1price").innerHTML = "";
+         document.getElementById("product2price").innerHTML = "";
+         document.getElementById("product3price").innerHTML = "";
+	     document.getElementById( "product1des" ).innerHTML = "Please select the items";
+     	 document.getElementById( "product2des" ).innerHTML = "Please select the items";
+	     document.getElementById( "product3des" ).innerHTML = "Please select the items";
+	}
+	displayProduct ( chosenProduct );
+  }
+  
+  document.forms[0].addEventListener("reset", resetOrder)
+  
+  document.getElementById("blue").addEventListener( "click" , function() { displayProduct(this.value);});
+  document.getElementById("black").addEventListener( "click" , function() { displayProduct(this.value);});
+  document.getElementById("cream").addEventListener( "click" , function() { displayProduct(this.value);});
+  
+  document.getElementById("blue").addEventListener( "click" , function() { desProduct(this.value);});
+  document.getElementById("black").addEventListener( "click" , function() { desProduct(this.value);});
+  document.getElementById("cream").addEventListener( "click" , function() { desProduct(this.value);});
+  
+
+
+  
+  document.getElementById("productoption").addEventListener( "change" , function () {CheckOptions(this.form);});
+  document.getElementById("OrderPrice").addEventListener( "change" , function () {AddME(this.form);});
+  
+  document.getElementById("product1").addEventListener( "click" , function() { 
+         displayProduct("blue");
+		 desProduct("blue");
+         document.getElementById("blue").checked = true;
+  });
+  document.getElementById("product2").addEventListener( "click" , function() { 
+         displayProduct("black");
+		 desProduct("black");
+         document.getElementById("black").checked = true;
+  });
+  document.getElementById("product3").addEventListener( "click" , function() { 
+         displayProduct("cream");
+		 desProduct("cream");
+         document.getElementById("cream").checked = true;
+  });
+  
+ 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DeadTunes - Home</title>
+<style>
+ul {
+
+	list-style: none;
+	float: right;
+	top: 0;
+	width: 93%;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2F4F4F;
+	
+}
+
+
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+li a:hover:not(.active) {
+	background-color: #A9A9A9;
+}
+
+.active {
+	background-color: #008B8B;
+}
+
+#logo {
+	width: 85px;
+	height: 100px;
+	float: left;
+}
+
+#ext_link {
+	width: 200px;
+	height: 200px;
+}
+
+#c_contrast {
+	width: 855px;
+	height: 310px;
+}
+
+img {
+	width: 225px;
+	height: 300px;
+}
+
+div.container{
+	width: 100%;
+	border: 1px #000000;
+}
+
+header {
+	margin-top: 0px;
+	
+}	
+
+article {
+	padding: 1em;
+	font-family: Arial, sans-serif;
+}
+
+
+footer {
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+div.transbox {
+	margin: 5px;
+	background-color: #ffffff;
+	border: 1px #000000;
+	opacity: 0.9;
+}
+
+div.transbox a {
+	margin: 1%;
+	font-weight: bold;
+	color: #000000;
+}
+
+div.vertical_line {
+	height: 430px;
+	width: 1px;
+	background: black;
+	float: right;
+}
+
+#fontcolor {
+	color: white;
+}
+
+</style>
+<script type= "text/javascript">
+
+function resizeText (multiplier) {
+	if (document.body.style.fontSize =="") {
+		document.body.style.fontSize = "1.0em";
+	}
+	document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+
+</script>
+</head>
+<body background="background1.jpg">
+
+<a href="main_page.html">
+<img src="final logo2.png" id="logo">
+</a>
+
+<ul>
+	<li><a  href="main_page.html">Home</a></li>     
+	<li><a href="Quiz.html">Take a Quiz</a></li>
+	<li><a  href="BuyProducts.html">Buy Products</a></li>
+	<li style="float:right"><a  href="feedback_page.html">Feedback</a></li>
+</ul>
+
+<div id= "foo" align= "right">
+	<table width= "96" border= "0">
+		<tr>
+		    <td colspan= "2" align= "center" id= "fontcolor">FONT SIZE</td>
+		</tr>
+		<tr>
+		    <td>
+			<input name= "reSize" type= "button" value= "&nbsp;+&nbsp;" onclick= "resizeText(1)" />
+		    </td>
+		    <td align= "right">
+			<input name= "reSize2" type= "button" value= "&nbsp;-&nbsp;" onclick= "resizeText(-1)" />
+		    </td>
+		</tr>
+	</table>
+</div>
+
+<div class= "transbox">
+
+<article>
+
+
+
+<center>
+
+<p><h1>Information page</h1></p>
+<p><h3>The topic for this website is Music.</h3></p>
+
+</center>
+
+<br>
+<br>
+<br>
+
+<p><b>Accessibility:</b></p><p>To make my web pages more accessible, I have provided a sufficient contrast between the foreground and background. On the navigation bar on every page, there is a hover effect on the different buttons which changes colour when the mouse is over it. In the feedback page, all parts of the form elements have clear and distinct associated labels. I have also used an asterisk to signify a required field. If the user does not enter in a required field, they will get a prompt to fill in the missing elements.</p>
+
+<br>
+<p><b>Typography:</b></p><p>I have used Arial font in all my web pages as it is a clear and very easy to read font.</p>
+<br>
+
+<p><b>Colour contrast:</b></p>
+
+<p>Colour contrast for text on the navigation bar</p>
+
+<img src="c_contrast for text on nav bar.jpg" id="c_contrast">
+<p>Colour contrast for text on the transparent box</p>
+<img src="c_contrast for text on transbox.jpg" id="c_contrast">
+
+<br>
+
+</article>
+
+<footer>
+<p>Page editor:<a href="Hamza_Yacub_CV.html">Hamza Yacub - w1589585</a></p>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

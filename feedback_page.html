@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DeadTunes - Feedback</title>
+<style>
+
+ul {
+
+	list-style: none;
+	float: right;
+	top: 0;
+	width: 93%;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2F4F4F;
+	
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+li a:hover:not(.active) {
+	background-color: #A9A9A9;
+}
+
+.active {
+	background-color: #008B8B;
+}
+
+img {
+	width: 85px;
+	height: 100px;
+	float: left;
+}
+
+div.container{
+	width: 100%;
+	border: 1px #000000;
+}
+
+header {
+	margin-top: 0px;
+	
+}	
+
+article {
+	padding: 1em;
+	font-family: Arial, sans-serif;
+}
+
+footer {
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+div.transbox {
+	margin: 5px;
+	background-color: #ffffff;
+	border: 1px #000000;
+	opacity: 0.9;
+}
+
+div.transbox a {
+	margin: 1%;
+	font-weight: bold;
+	color: #000000;
+}
+
+#fontcolor {
+	color: white;
+}
+
+</style>
+<script type= "text/javascript">
+
+function JSformFunction() {
+
+	var x = document.getElementById('name').value;
+	if (x == "") {
+		alert("Please fill in your name.");		
+		return false;
+	}  
+
+	var y = document.getElementById('comments').value;
+
+	var z = document.getElementById('email').value;
+ 
+	var a = document.getElementsByName("rating");
+	var len = a.length
+
+	for (i=0; i<len; i++) {
+		
+		if (a[i].checked) {
+			alert ("Dear " + x + ", thank you very much for your feedback. You have rated our website as '" + a[i].value + "' and your comment was '" + y + "'.");
+		}
+	}
+	
+}
+
+function resizeText (multiplier) {
+	if (document.body.style.fontSize =="") {
+		document.body.style.fontSize = "1.0em";
+	}
+	document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+
+</script>
+</head>
+<body background="background1.jpg">
+
+<a href="main_page.html">
+<img src="final logo2.png"logo">
+</a>
+
+<ul>
+	<li><a  href="main_page.html">Home</a></li>     
+	<li><a  href="Quiz.html">Take a Quiz</a></li>
+	<li><a  href="BuyProducts.html">Buy Products</a></li>
+	<li style="float:right"><a class="active" href="feedback_page.html">Feedback</a></li>
+</ul>
+
+<div id= "foo" align= "right">
+	<table width= "96" border= "0">
+		<tr>
+		    <td colspan= "2" align= "center" id= "fontcolor">FONT SIZE</td>
+		</tr>
+		<tr>
+		    <td>
+			<input name= "reSize" type= "button" value= "&nbsp;+&nbsp;" onclick= "resizeText(1)" />
+		    </td>
+		    <td align= "right">
+			<input name= "reSize2" type= "button" value= "&nbsp;-&nbsp;" onclick= "resizeText(-1)" />
+		    </td>
+		</tr>
+	</table>
+</div>
+
+<div class= "transbox">
+
+<article>
+
+<br>
+
+<center>
+<p><h1><b><i>Thank you for visiting our website. <br> Please rate our website and give us some feedback on your thoughts and any improvements that we can make.</i></b></h1></p>
+</center>
+
+<br>           
+<br>
+
+<form onsubmit= "return JSformFunction()" method= "post">
+	Name: * <br>   
+	<input type = "text" id= "name"> <br><br>  
+	E-mail: <br> 
+	<input type = "text" id= "email"> <br><br><br>
+
+	Your rating of the website: * <br><br>
+
+	<input type = "radio" id= "rating1" name= "rating" value = "Amazing" checked> Amazing <br>
+	<input type = "radio" id= "rating2" name= "rating" value = "Good"> Good <br>
+	<input type = "radio" id= "rating3" name= "rating" value = "Ok"> Ok <br>
+	<input type = "radio" id= "rating4" name= "rating" value = "Poor"> Poor <br>
+	<input type = "radio" id= "rating5" name= "rating" value = "Terrible"> Terrible <br><br><br>
+
+	Any comments about the website: <br><br>	
+	
+	<input type = "text" id= "comments" maxlength= "200"> <br><br> 
+
+
+	<input type= "submit" value= "Submit">
+</form>
+
+</article>
+
+<footer>
+<p>Page editor:<a href="Hamza_Yacub_CV.html">Hamza Yacub - w1589585</a><a href="info_page.html">Information about the website</a></p>          
+</footer>
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+

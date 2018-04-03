@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DeadTunes - Home</title>
+<style>
+ul {
+
+	list-style: none;
+	float: right;
+	top: 0;
+	width: 93%;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2F4F4F;
+	
+}
+
+
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+li a:hover:not(.active) {
+	background-color: #A9A9A9;
+}
+
+.active {
+	background-color: #008B8B;
+}
+
+#logo {
+	width: 85px;
+	height: 100px;
+	float: left;
+}
+
+#ext_link {
+	width: 200px;
+	height: 200px;
+}
+
+img {
+	width: 225px;
+	height: 300px;
+}
+
+div.container{
+	width: 100%;
+	border: 1px #000000;
+}
+
+header {
+	margin-top: 0px;
+	
+}	
+
+article {
+	padding: 1em;
+	font-family: Arial, sans-serif;
+}
+
+aside {
+	width: 20%;
+	height: 100%;
+	float: right;
+	margin-top: 100px;
+}
+
+footer {
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+div.transbox {
+	margin: 5px;
+	background-color: #ffffff;
+	border: 1px #000000;
+	opacity: 0.9;
+}
+
+div.transbox a {
+	margin: 1%;
+	font-weight: bold;
+	color: #000000;
+}
+
+div.vertical_line {
+	height: 430px;
+	width: 1px;
+	background: black;
+	float: right;
+}
+
+#fontcolor {
+	color: white;
+}
+
+</style>
+
+</head>
+<body background="background1.jpg">
+
+<a href="main_page.html">
+<img src="final logo2.png" id="logo">
+</a>
+
+<ul>
+    <li><a class="active" href="main_page.html">Home</a></li>     
+	<li><a href="Quiz.html">Take a Quiz</a></li>
+	<li><a  href="BuyProducts.html">Buy Products</a></li>
+	<li style="float:right"><a  href="feedback_page.html">Feedback</a></li>
+</ul>
+
+<div id= "foo" align= "right">
+	<table width= "96" border= "0">
+		<tr>
+		    <td colspan= "2" align= "center" id= "fontcolor">FONT SIZE</td>
+		</tr>
+		<tr>
+		    <td>
+			<input name= "reSize" type= "button" value= "&nbsp;+&nbsp;" onclick= "resizeText(1)" />
+		    </td>
+		    <td align= "right">
+			<input name= "reSize2" type= "button" value= "&nbsp;-&nbsp;" onclick= "resizeText(-1)" />
+		    </td>
+		</tr>
+	</table>
+</div>
+
+<div class= "transbox">
+
+<article>
+
+<aside>
+
+<center>
+<a href="https://www.shazam.com/gb/charts/top-100/world">
+<img src="shazam.png" id= "ext_link">
+</a>
+
+<br>
+<br>
+
+<p><b><i>Click on the Shazam symbol above to take you to the Top 100 global charts</i></b></p>
+</center>
+
+</aside>
+
+<div class= "vertical_line"></div>
+
+<center>
+<img src="final logo2.png">
+<br>
+<br>
+<h1>Welcome to DeadTunes - Home of music. Here you can find out which songs have topped the global charts as of March 2017, test your knowledge and take a quiz on music and even buy your favourite instruments!</h1>
+</center>
+
+<br>
+
+<hr>
+
+<br>
+<br>
+<br>
+
+</article>
+
+
+
+
+<footer>
+<p>Page editor:<a href="Hamza_Yacub_CV.html">Hamza Yacub - w1589585</a><a href="info_page.html">Information about the website</a></p>
+</footer>
+<script type= "text/javascript">
+
+function resizeText (multiplier) {
+	if (document.body.style.fontSize =="") {
+		document.body.style.fontSize = "1.0em";
+	}
+	document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+
+</script>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
